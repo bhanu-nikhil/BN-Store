@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Styling of Header and Footer start here */
+header {
+    color: #fff;
+    background-color: #78D794;
+    padding: 35px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    right: 40px;
+    align-items: center;
+    padding-top: 17px;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+.search-bar {
+    flex: 1;
+    text-align: right;
+    left: 10px;
+    padding-top: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 100px;
+    height: auto;
+    margin-left: 0;
+    background-color: #000000;
+}
+
+footer {
+    background-color: #78D794;
+    color: #fff;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.newsletter,
+.social-media {
+    max-width: 300px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/*Styling of Header and Footer ends here */
+
+
+/*Styling of Body starts here */
+.storysection {
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin: 5% auto;
+    padding: 20px;
+    /* Added padding for better spacing */
+    border: 2px solid #78D794;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 14px 32px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.storysection i {
+    font-size: 76px;
+    color: #78D794;
+}
+
+.storysection:hover {
+    background-color: #78D794;
+    transform: scale(1.2);
+    border: 2px solid #000000;
+}
+
+.storysection:hover i {
+    color: #fff;
+}
+
+.storysection a {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.storysection h3 {
+    text-align: center;
+}
+
+/* Add this CSS to center the form elements */
+.contact-form {
+    display: block;
+    width: 80%;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #78D794;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: #1e3625;
+}
+
+@media screen and (max-width:950px) {
+    .slider-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .slider-wrapper {
+        width: 90%;
+    }
+}
+
+
+/* Styling of Body ends here */
