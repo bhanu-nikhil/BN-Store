@@ -110,9 +110,9 @@ document.addEventListener('DOMContentLoaded', function () {
                  , "model": "Iphone 15 Pro Max"
                  , "processor": "A17 PRO"
                  , "RAM": "8GB"
-                 , "storage": "1TB"
+                 , "storage": "256GB"
                  , "display": "6.7-inch"
-                 , "price": "$1499.99"
+                 , "price": "$1199.99"
                  , "image": "images/accessories/15promax.jpg"
      }
                 , {
@@ -120,9 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 , "model": "Iphone 15 Pro"
                 , "processor": "A17 PRO"
                 , "RAM": "8GB"
-                , "storage": "1TB"
+                , "storage": "128GB"
                 , "display": "6.1-inch"
-                , "price": "$1399.99"
+                , "price": "$999.99"
                 , "image": "images/accessories/15 pro.jpg"
     }
                 , {
@@ -130,9 +130,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 , "model": "Iphone 14 Plus"
                 , "processor": "A16 PRO"
                 , "RAM": "8GB"
-                , "storage": "512GB"
+                , "storage": "128GB"
                 , "display": "6.4-inch"
-                , "price": "$1199.99"
+                , "price": "$899.99"
                 , "image": "images/accessories/14plus.jpg"
     }
                 , {
@@ -140,9 +140,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 , "model": "Iphone 14 Pro"
                 , "processor": "A17 PRO"
                 , "RAM": "8GB"
-                , "storage": "1TB"
+                , "storage": "128GB"
                 , "display": "6.7-inch"
-                , "price": "$1499.99"
+                , "price": "$999.99"
                 , "image": "images/accessories/14pro.jpg"
     }];
      case 'OnePlus':
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 , "RAM": "8GB"
                 , "storage": "512GB"
                 , "display": "6.7-inch"
-                , "price": "$1499.99"
+                , "price": "$1199.99"
                 , "image": "images/accessories/OPOpen.jpg"
     },
             {
@@ -214,7 +214,67 @@ document.addEventListener('DOMContentLoaded', function () {
        ]
                  , "price": "$399.99"
                  , "image": "images/accessories/iwatch.jpg"
-     }
+     },
+            {
+                "type": "Tablet"
+                , "brand": "Apple"
+                , "model": "Apple iPad Air (5th Generation)"
+                , "processor": "M1 Chip"
+                , "color": "Blue"
+                , "storage": "64GB"
+                , "water_resistance": "50 meters"
+                , "price": "$549.99"
+                , "image": "images/accessories/ipadair5thG.jpg"
+        },
+        {
+            "type": "Tablet"
+            , "brand": "Apple"
+            , "model": "Apple iPad 11 (4th Generation)"
+            , "processor": "M2 Chip"
+            , "color": "Space Grey"
+            , "storage": "128GB"
+            , "water_resistance": "50 meters"
+            , "price": "$749.99"
+            , "image": "images/accessories/ipad114thG.jpg"
+    },
+    {
+        "type": "Tablet"
+        , "brand": "Apple"
+        , "model": "Apple iPad Pro 12 (6th Generation)"
+        , "processor": "M2 Chip"
+        , "color": "Silver"
+        , "storage": "256GB"
+        , "water_resistance": "50 meters"
+        , "price": "$999.99"
+        , "image": "images/accessories/ipadpro6thG.jpg"
+},
+    {
+        "type": "Ear buds"
+        , "brand": "Beats"
+        , "model": "Beats Fit Pro"
+        , "color": "Black"
+        , "connectivity": "Bluetooth"
+        , "battery_life": "Up to 30 hours"
+        , "noise_cancellation": true
+        , "price": "$249.99"
+        , "image": "images/accessories/beatspro.jpg"
+    },
+        {
+            "type": "Adapter"
+            , "brand": "Apple"
+            , "model": "Apple 20W USB-C Power Adapter"
+            , "color": "White"
+            , "price": "$24.99"
+            , "image": "images/accessories/appleadapter.jpg"
+    },
+            {
+                "type": "Charging cable"
+                , "brand": "Apple"
+                , "model": "Apple USB-C to Lightning Cable -2m"
+                , "color": "White"
+                , "price": "$24.99"
+                , "image": "images/accessories/applecable.jpg"
+        }
                      , {
                  "type": "Fitness Band"
                  , "brand": "Fitbit"
@@ -289,18 +349,18 @@ document.addEventListener('DOMContentLoaded', function () {
  
      const storage = document.createElement('p');
      storage.textContent = `Storage: ${product.storage || 'N/A'}`;
- 
-     const graphics = document.createElement('p');
-     graphics.textContent = `Graphics: ${product.graphics || 'N/A'}`;
+
+     const processor = document.createElement('p');
+     processor.textContent = `Processor: ${product.processor || 'N/A'}`;
  
      // Add other information fields as needed
  
      modalContent.appendChild(name);
+     modalContent.appendChild(processor);
      modalContent.appendChild(price);
      modalContent.appendChild(brand);
      modalContent.appendChild(ram);
      modalContent.appendChild(storage);
-     modalContent.appendChild(graphics);
      // Append other information fields here
  
      // Add modal styles here
